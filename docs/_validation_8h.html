@@ -105,6 +105,7 @@ $(function(){initNavTree('_validation_8h.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="common_8h_source.html">common.h</a>&quot;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Validation.h:</div>
 <div class="dyncontent">
@@ -135,9 +136,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a9f2e0baa3ede48594dfca257c6bce7b9" id="r_a9f2e0baa3ede48594dfca257c6bce7b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f2e0baa3ede48594dfca257c6bce7b9">safe_stoi</a> (const std::string &amp;stoi_candidate)</td></tr>
 <tr class="memdesc:a9f2e0baa3ede48594dfca257c6bce7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to treat the stoi error properly if something goes wrong.  <br /></td></tr>
 <tr class="separator:a9f2e0baa3ede48594dfca257c6bce7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4dcbc0c3a8ef09c76740f6d194d16b0" id="r_ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_running_opt.html">RunningOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4dcbc0c3a8ef09c76740f6d194d16b0">validate_input</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the data typed by the user according to the syntax provided.  <br /></td></tr>
-<tr class="separator:ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83cdc66574dfa58d3dce8008ec65288" id="r_ab83cdc66574dfa58d3dce8008ec65288"><td class="memItemLeft" align="right" valign="top">std::variant&lt; <a class="el" href="struct_running_opt.html">RunningOpt</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab83cdc66574dfa58d3dce8008ec65288">validate_input</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:ab83cdc66574dfa58d3dce8008ec65288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the data typed by the user according to the syntax provided.  <br /></td></tr>
+<tr class="separator:ab83cdc66574dfa58d3dce8008ec65288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a54d1ae0b66e7d2522bf9cee0a1119d29" name="a54d1ae0b66e7d2522bf9cee0a1119d29"></a>
@@ -191,14 +192,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4dcbc0c3a8ef09c76740f6d194d16b0" name="ad4dcbc0c3a8ef09c76740f6d194d16b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4dcbc0c3a8ef09c76740f6d194d16b0">&#9670;&#160;</a></span>validate_input()</h2>
+<a id="ab83cdc66574dfa58d3dce8008ec65288" name="ab83cdc66574dfa58d3dce8008ec65288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83cdc66574dfa58d3dce8008ec65288">&#9670;&#160;</a></span>validate_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_running_opt.html">RunningOpt</a> validate_input </td>
+          <td class="memname">std::variant&lt; <a class="el" href="struct_running_opt.html">RunningOpt</a>, bool &gt; validate_input </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
         </tr>

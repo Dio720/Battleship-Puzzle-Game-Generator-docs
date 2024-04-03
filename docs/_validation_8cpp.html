@@ -108,6 +108,7 @@ $(function(){initNavTree('_validation_8cpp.html',''); initResizable(); });
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 <code>#include &quot;<a class="el" href="common_8h_source.html">include/common.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Validation.cpp:</div>
@@ -132,9 +133,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af18f7a4d725654be5ad89e464f33f294" id="r_af18f7a4d725654be5ad89e464f33f294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af18f7a4d725654be5ad89e464f33f294">validate_rows_and_cols_input</a> (const std::string &amp;dimension_type, const std::string &amp;dimension_value_str, <a class="el" href="struct_running_opt.html">RunningOpt</a> &amp;run_opt)</td></tr>
 <tr class="memdesc:af18f7a4d725654be5ad89e464f33f294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a rows/cols value, verifies if its on the range, if not, throws a range error. Also verifies if the the options(&ndash;rows/&ndash;cols) were type as it should be.  <br /></td></tr>
 <tr class="separator:af18f7a4d725654be5ad89e464f33f294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4dcbc0c3a8ef09c76740f6d194d16b0" id="r_ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_running_opt.html">RunningOpt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4dcbc0c3a8ef09c76740f6d194d16b0">validate_input</a> (int argc, char *argv[])</td></tr>
-<tr class="memdesc:ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the data typed by the user according to the syntax provided.  <br /></td></tr>
-<tr class="separator:ad4dcbc0c3a8ef09c76740f6d194d16b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83cdc66574dfa58d3dce8008ec65288" id="r_ab83cdc66574dfa58d3dce8008ec65288"><td class="memItemLeft" align="right" valign="top">std::variant&lt; <a class="el" href="struct_running_opt.html">RunningOpt</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab83cdc66574dfa58d3dce8008ec65288">validate_input</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:ab83cdc66574dfa58d3dce8008ec65288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the data typed by the user according to the syntax provided.  <br /></td></tr>
+<tr class="separator:ab83cdc66574dfa58d3dce8008ec65288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a54d1ae0b66e7d2522bf9cee0a1119d29" name="a54d1ae0b66e7d2522bf9cee0a1119d29"></a>
@@ -188,14 +189,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4dcbc0c3a8ef09c76740f6d194d16b0" name="ad4dcbc0c3a8ef09c76740f6d194d16b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4dcbc0c3a8ef09c76740f6d194d16b0">&#9670;&#160;</a></span>validate_input()</h2>
+<a id="ab83cdc66574dfa58d3dce8008ec65288" name="ab83cdc66574dfa58d3dce8008ec65288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83cdc66574dfa58d3dce8008ec65288">&#9670;&#160;</a></span>validate_input()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_running_opt.html">RunningOpt</a> validate_input </td>
+          <td class="memname">std::variant&lt; <a class="el" href="struct_running_opt.html">RunningOpt</a>, bool &gt; validate_input </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
         </tr>
